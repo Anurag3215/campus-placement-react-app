@@ -1,16 +1,10 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
+import React from 'react'
 
-function App() {
-  const [count, setCount] = useState(0)
+const AddStudent = () => {
+    return (
+        <div>
 
-  return (
-    <>
-      
-<div className="container">
+            <div className="container">
                 <div className="row">
                     <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
 
@@ -87,8 +81,8 @@ function App() {
                 </div>
             </div>
 
-    </>
-  )
+        </div>
+    )
 }
 
-export default App
+export default AddStudent

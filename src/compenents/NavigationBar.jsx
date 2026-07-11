@@ -1,40 +1,27 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const NavigationBar = () => {
     return (
-        <div>import {useState} from 'react'
-            import reactLogo from './assets/react.svg'
-            import viteLogo from './assets/vite.svg'
-            import heroImg from './assets/hero.png'
-            import './App.css'
-            import {BrowserRouter, Route, Routes} from 'react-router-dom'
-            import AddRegistration from './components/AddRegistration'
-            import SearchRegistration from './components/SearchRegistration'
-            import DeleteRegistration from './components/DeleteRegistration'
-            import ViewRegistration from './components/ViewRegistration'
+        <div>
 
-            function App() {
-  const [count, setCount] = useState(0)
+            <nav className="navbar navbar-expand-lg bg-body-tertiary">
+                <div className="container-fluid">
+                    <a className="navbar-brand" href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSciwPtMAQi1VsY3I4UAJpnIZhR0gyokxLiVbIa29ysHHkHKzSnKM2XB79R&s=10" style={{ width: '65px', height: '65px' }} alt="Logo" /></a>
+                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span className="navbar-toggler-icon"></span>
+                    </button>
+                    <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div className="navbar-nav">
+                            <Link className="nav-link active" aria-current="page" to="/">Add</Link>
+                            <Link className="nav-link" to="/search">Search </Link>
+                            <Link className="nav-link" to="/delete">Delete </Link>
+                            <Link className="nav-link" to="/view">View </Link>
+                        </div>
+                    </div>
+                </div>
+            </nav>
 
-            return (
-            <>
-                <BrowserRouter>
-
-                    <Routes>
-
-                        <Route path='/' element={<AddRegistration />} />
-                        <Route path='/search' element={<SearchRegistration />} />
-                        <Route path='/delete' element={<DeleteRegistration />} />
-                        <Route path='/view' element={<ViewRegistration />} />
-
-                    </Routes>
-
-                </BrowserRouter>
-            </>
-            )
-}
-
-            export default App
         </div>
     )
 }

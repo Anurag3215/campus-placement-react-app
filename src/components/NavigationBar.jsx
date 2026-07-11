@@ -1,10 +1,9 @@
-import React from 'react'
 import { Link } from 'react-router-dom'
 
 const NavigationBar = () => {
     return (
         <div>
-
+            
             <nav className="navbar navbar-expand-lg bg-body-tertiary">
                 <div className="container-fluid">
                     <a className="navbar-brand" href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSciwPtMAQi1VsY3I4UAJpnIZhR0gyokxLiVbIa29ysHHkHKzSnKM2XB79R&s=10" style={{ width: '65px', height: '65px' }} alt="Logo" /></a>

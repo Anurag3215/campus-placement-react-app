@@ -14,7 +14,7 @@ function App() {
       
 <AddStudent/>
 <SearchRegistration/>
-<SearchRegistration/>
+<DeleteRegistration/>
       
     </>
   )
